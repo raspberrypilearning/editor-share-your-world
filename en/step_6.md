@@ -15,7 +15,7 @@ language: html
 filename: timeline.html
 line_numbers: true
 line_number_start: 1
-line_highlights: 1-45
+line_highlights: 1-28,30-45
 ---
 <!DOCTYPE html>
 <html lang="en">

@@ -8,10 +8,10 @@ last_tested: "2024-3-25"
 steps:
   - title: You will make
   - title: Build the home page
-  - title: Choose your colours
+  - title: Style the page
     completion:
       - engaged
-  - title: Style the page
+  - title: Choose your colours
   - title: Add interactivity
     completion:
       - internal
