@@ -1,4 +1,4 @@
 name: 'Wildcats'
-identifier: 'share-your-world-wildcats'
+identifier: 'editor-share-your-world-wildcats'
 type: 'html'
 build: true
