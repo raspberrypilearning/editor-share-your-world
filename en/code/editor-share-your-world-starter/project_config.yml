@@ -1,0 +1,4 @@
+name: 'Share your world starter'
+identifier: 'editor-share-your-world-starter'
+type: 'html'
+build: true

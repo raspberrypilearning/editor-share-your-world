@@ -1,14 +1,22 @@
-title: Project title in sentence case
+title: Share your world
 hero_image: images/banner.png
-description: A short description of the project
+description: Build an interactive website to share a part of your world
+version: 1
 listed: false
-pdf: false
+copyedit: false
+last_tested: "2024-3-25"
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: You will make
+  - title: Build the home page
+  - title: Style the page
     completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
+      - engaged
+  - title: Choose your colours
+  - title: Add interactivity
+    completion:
+      - internal
+  - title: Build a timeline page
     completion:
       - external
+  - title: Challenge
+    challenge: true
