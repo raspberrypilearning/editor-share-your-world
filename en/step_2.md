@@ -1,95 +1,323 @@
-<h2 class="c-project-heading--task">Build the home page</h2>
---- task ---
-Add a navigation bar and scrolling sections to turn the starter page into a Wildcats homepage.
---- /task ---
+<h2 class="c-project-heading--task">Style the page</h2>
+### Step 1
+Add the layout and image styles that turn your HTML into a full-screen scrolling website.
 
-Replace the contents of `index.html` with this page structure.
+Replace the contents of `style.css` with these rules.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: index.html
+language: css
+filename: style.css
 line_numbers: true
 line_number_start: 1
-line_highlights: 6-12,16-27,29,31-35,37-41,43-59,61-69
+line_highlights: 1-5,8-17,19-25,27-32,34-36,38-41,43-45,47-54,56-62,64-69,71-76,78-85,87-89,91-97,99-101,103-114,117-121,123-126,128-133,135-145,147-157,159-161,163-165,167-169,171-174,177-180,182-184,186-188,190-193,195-200,202-207,209-211,213-223,225-229,232-242,244-255,257-259,261-263,265-267,269-275,277-284,286-292,294-300
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="default.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Wildcats</title>
-  </head>
-  <body>
+.grid-container {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  z-index: -1;
+  min-height: 100%;
+}
 
-    <div class="grid-container">
-      <nav class="navigation">
-        <a href="index.html">Wildcats</a> 
-        <a href="timeline.html">Timeline</a> 
-        <div class="toggle-container">
-          <label class="switch">
-            <input type="checkbox" id="darkModeToggle" />
-            <span class="slider"></span>
-          </label>
-          <span class="toggle-label material-symbols-outlined">light_mode</span>
-        </div>
-      </nav>
-      
-      <div class="scrolling-section">
+.navigation {
+  background-color: var(--nav-background-colour);
+  color: var(--nav-font-colour);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 1.5rem "Anton", sans-serif;
+  letter-spacing: 0.3rem;
+}
 
-        <div class="bball">
-          <div class="caption">
-            <span class="border">Wellington Wildcats</span>
-          </div>
-        </div>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
-        <div class="ball parallax">
-          <div class="caption">
-            <span class="border">Training</span>
-          </div>
-        </div>
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-        <div class="textSection">
-          <p>
-            The Wildcats want you in their next training session. We know the
-            streets can be tough, but so are you, and that's what makes you
-            perfect for this.
-          </p>
-          <p>
-            A court where your skills are not just appreciated but celebrated,
-            where your dedication to the game is recognised and nurtured. You're
-            not just honing your skills; you're becoming a part of a family that
-            stands together through thick and thin.
-          </p>
-          <p>
-            Your journey starts here, and we can't wait to see you bring your
-            spirit to the Wildcats family.
-          </p>
-        </div>
+.navigation a:hover {
+  color: var(--link-hover-colour);
+}
 
-        <div class="score parallax">
-          <div class="caption">
-            <span class="border">LATEST SCORE - 23:11</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-  <script type="text/javascript" src="scripts.js"></script>  
-</html>
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin-bottom: 10px;
+}
+
+/*Time line styling */
+#timeline {
+  position: relative;
+  margin: 0px;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
+
+#line {
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  background-color: black;
+  width: 100%;
+}
+
+.entry {
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+  gap: 5px;
+}
+
+#nodes {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  transform: translateY(100%);
+}
+
+.event {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  transform: translateX(-50%);
+  background-color: var(--event-background-colour);
+  z-index: 2;
+}
+
+#year-input {
+  max-width: 50px;
+}
+
+.year {
+  position: absolute;
+  top: 100%;
+  font-size: 12px;
+  color: black;
+  transform: translateX(-50%);
+}
+
+.event:hover .event-description {
+  display: block;
+}
+
+.event-description {
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px;
+  border: 1px solid var(--event-border-colour);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+/* General Styling */
+.content {
+  padding: 20px;
+  font: 1.2rem "Anton", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--slider-colour);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--slider-on-colour);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--slider-on-colour);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.toggle-label {
+  margin-left: 10px;
+  color: white;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: var(--nav-background-colour);
+  color: white;
+}
+
+.dark-mode .navigation {
+  background-color: var(--nav-light-mode);
+}
+
+.dark-mode .year {
+  color: white;
+}
+
+.dark-mode .event-description {
+  background-color: black;
+  color: white;
+}
+
+body,
+html {
+  height: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, #4caf50, #2196f3);
+  overflow: hidden;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+}
+
+.dark-mode .grid-container::before {
+  background: linear-gradient(to right, #e67e22, #2980b9);
+}
+
+.grid-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+  z-index: -1;
+  transition: background 0.3s;
+}
+
+.scrolling-section {
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Parallax section styling */
+.bball {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  min-height: 100%;
+  background-attachment: fixed;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.ball,
+.score {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  min-height: 100%;
+  background-attachment: fixed;
+  opacity: 0.1;
+  transition: opacity 2s ease;
+}
+
+.bball {
+  background-image: url("bball_bg2.jpg");
+}
+
+.ball {
+  background-image: url("ball.jpg");
+}
+
+.score {
+  background-image: url("score.jpg");
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.textSection {
+  background-color: var(--textSection-bgcol);
+  padding: 30px 80px;
+  min-height: 1;
+  font: 1.3rem "Anton", sans-serif;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+.caption {
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  background-color: var(--border-bgcol);
+  color: white;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
---- task ---
-Click **Run** and check that your page shows a navigation bar, a Wildcats title panel, a Training panel, some welcoming text, and a score panel.
---- /task ---
+### Step 2
+Click **Run** and check that each section fills the page, the captions sit on top of the images, and the navigation links sit in a single bar across the top.
