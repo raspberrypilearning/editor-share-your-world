@@ -5,8 +5,8 @@ version: 1
 listed: false
 copyedit: false
 last_tested: "2024-3-25"
+landing: true
 steps:
-  - title: You will make
   - title: Build the home page
   - title: Style the page
     completion:

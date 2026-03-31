@@ -1,41 +1,61 @@
-<h2 class="c-project-heading--task">Choose your colours</h2>
---- task ---
-Set up reusable colour variables so the homepage and timeline page share the same palette.
---- /task ---
+<h2 class="c-project-heading--task">Add interactivity</h2>
+### Step 1
+Use JavaScript to save the dark mode setting and fade in the parallax sections as they scroll into view.
 
-Update `default.css` so the page background, navigation bar, timeline, and captions all use the same theme values.
+Add this code to `scripts.js`.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: css
-filename: default.css
+language: javascript
+filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 1-16
+line_highlights: 1-3,5-13,15-22,24-38
 ---
-/* Set up colour palette and fonts using variables */
-:root {
-  --body-background-colour: #000000;
-  --body-text-colour: #FFFFFF;
-  --nav-background-colour: #333333;
-  --event-background-colour: #333333;
-  --nav-font-colour: #dddddd;
-  --link-hover-colour: #ffc107;
-  --event-background-colour: #333333;
-  --event-border-colour: #cccccc;
-  --slider-colour: #cccccc;
-  --slider-on-colour: #2196f3;
-  --nav-light-mode: #8e6363;
-  --textSection-bgcol: #823d0b;
-  --border-bgcol: #2c3233;
-}
+// COLOUR MODE
+document.addEventListener("DOMContentLoaded", function () {
+  const darkModeToggle = document.getElementById("darkModeToggle");
+
+  // Check if colour mode preference is stored in local storage
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+  // Set initial colour mode state based on the stored preference
+  document.body.classList.toggle("dark-mode", isDarkMode);
+  darkModeToggle.checked = isDarkMode;
+
+  darkModeToggle.addEventListener("change", function () {
+    const isDarkMode = darkModeToggle.checked;
+
+  // Check if colour mode is already active
+  if (isDarkMode !== document.body.classList.contains("dark-mode")) {
+    // Update body class and store the user's preference in local storage
+    document.body.classList.toggle("dark-mode", isDarkMode);
+    localStorage.setItem("darkMode", isDarkMode.toString());
+  }
+  });
+});
+
+// PARALLAX SCROLLING
+const allParallax = document.querySelectorAll(".parallax");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1; // Fade-in effect
+        observer.unobserve(entry.target); // Stop observing once the section is visible
+      }
+    }
+  );
+},
+{ threshold: 0.5}
+);
+allParallax.forEach((parallax) => observer.observe(parallax));
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
---- task ---
-Click **Run** and check that the page now uses your chosen colours for the navigation bar, text panel, caption labels, and dark mode background.
---- /task ---
+### Step 2
+Click **Run**, switch dark mode on and off, then refresh the page to check that your choice stays saved and the Training and score sections fade in as you scroll.
