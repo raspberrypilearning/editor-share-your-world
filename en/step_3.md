@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Choose your colours</h2>
+
 ### Step 1
 Set up reusable colour variables so the homepage and timeline page share the same palette.
 

@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Add interactivity</h2>
+
 ### Step 1
 Use JavaScript to save the dark mode setting and fade in the parallax sections as they scroll into view.
 

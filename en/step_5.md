@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Build a timeline page</h2>
+
 ### Step 1
 Create a second page where visitors can add and save memorable Wildcats events on a timeline.
 

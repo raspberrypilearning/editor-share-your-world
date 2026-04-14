@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Build the home page</h2>
+
 ### Step 1
 Add a navigation bar and scrolling sections to turn the starter page into a Wildcats homepage.
 

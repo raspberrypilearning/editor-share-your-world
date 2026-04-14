@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Style the page</h2>
+
 ### Step 1
 Add the layout and image styles that turn your HTML into a full-screen scrolling website.
 
