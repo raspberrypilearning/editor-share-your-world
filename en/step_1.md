@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Build the home page</h2>
 
-### Step 1
 Add a navigation bar and scrolling sections to turn the starter page into a Wildcats homepage.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Replace the contents of `index.html` with this page structure.
 
@@ -89,6 +90,8 @@ line_highlights: 6-12,16-27,29,31-35,37-41,43-59,61-69
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-### Step 2
+## Now run your code
+
 Click **Run** and check that your page shows a navigation bar, a Wildcats title panel, a Training panel, some welcoming text, and a score panel.
+
+Confirm the observable result.

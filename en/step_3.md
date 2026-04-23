@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Choose your colours</h2>
 
-### Step 1
 Set up reusable colour variables so the homepage and timeline page share the same palette.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Update `default.css` so the page background, navigation bar, timeline, and captions all use the same theme values.
 
@@ -35,6 +36,8 @@ line_highlights: 1-16
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-### Step 2
+## Now run your code
+
 Click **Run** and check that the page now uses your chosen colours for the navigation bar, text panel, caption labels, and dark mode background.
+
+Confirm the observable result.

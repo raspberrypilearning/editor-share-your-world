@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Style the page</h2>
 
-### Step 1
 Add the layout and image styles that turn your HTML into a full-screen scrolling website.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Replace the contents of `style.css` with these rules.
 
@@ -319,6 +320,8 @@ h3 {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-### Step 2
+## Now run your code
+
 Click **Run** and check that each section fills the page, the captions sit on top of the images, and the navigation links sit in a single bar across the top.
+
+Confirm the observable result.
