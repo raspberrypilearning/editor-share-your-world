@@ -30,5 +30,3 @@ line_highlights: 18-23
 ## Now run your code
 
 Click **Run** and check that your extra details appear on the page and still match the story you want visitors to explore.
-
-Confirm the observable result.

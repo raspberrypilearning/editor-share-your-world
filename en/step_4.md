@@ -60,6 +60,4 @@ allParallax.forEach((parallax) => observer.observe(parallax));
 
 ## Now run your code
 
-Click **Run**, switch dark mode on and off, then refresh the page to check that your choice stays saved and the Training and score sections fade in as you scroll.
-
-Confirm the observable result.
+Click **Run**, switch dark mode on and off, then refresh the page and check that your choice stays saved and the Training and score sections fade in as you scroll.

@@ -176,6 +176,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ## Now run your code
 
-Click **Run**, open the **Timeline** page, add a year and event, and check that a new marker appears on the line and is still there after you refresh the page.
-
-Confirm the observable result.
+Click **Run**, open the **Timeline** page, add a year and event, and check that a new marker appears on the line and stays there after you refresh the page.

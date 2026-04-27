@@ -39,5 +39,3 @@ line_highlights: 1-16
 ## Now run your code
 
 Click **Run** and check that the page now uses your chosen colours for the navigation bar, text panel, caption labels, and dark mode background.
-
-Confirm the observable result.

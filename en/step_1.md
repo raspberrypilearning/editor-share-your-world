@@ -92,6 +92,4 @@ line_highlights: 6-12,16-27,29,31-35,37-41,43-59,61-69
 
 ## Now run your code
 
-Click **Run** and check that your page shows a navigation bar, a Wildcats title panel, a Training panel, some welcoming text, and a score panel.
-
-Confirm the observable result.
+Click **Run** and check that your page shows a navigation bar, a Wildcats title panel, a Training panel, welcoming text, and a score panel.

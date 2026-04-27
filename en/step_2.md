@@ -322,6 +322,4 @@ h3 {
 
 ## Now run your code
 
-Click **Run** and check that each section fills the page, the captions sit on top of the images, and the navigation links sit in a single bar across the top.
-
-Confirm the observable result.
+Click **Run** and check that each section fills the page, the captions sit on top of the images, and the navigation links sit in one bar across the top.
