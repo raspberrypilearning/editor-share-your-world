@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Add interactivity</h2>
-### Step 1
+
 Use JavaScript to save the dark mode setting and fade in the parallax sections as they scroll into view.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Add this code to `scripts.js`.
 
@@ -56,6 +58,6 @@ allParallax.forEach((parallax) => observer.observe(parallax));
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-### Step 2
-Click **Run**, switch dark mode on and off, then refresh the page to check that your choice stays saved and the Training and score sections fade in as you scroll.
+## Now run your code
+
+Click **Run**, switch dark mode on and off, then refresh the page and check that your choice stays saved and the Training and score sections fade in as you scroll.

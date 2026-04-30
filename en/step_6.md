@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Challenge</h2>
-### Step 1
+
 Personalise your Wildcats site by adding more timeline moments or changing the text so the website tells your version of the story.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 You could start by editing the list of starting events in `timeline.js`.
 
@@ -25,6 +27,6 @@ line_highlights: 18-23
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-### Step 2
+## Now run your code
+
 Click **Run** and check that your extra details appear on the page and still match the story you want visitors to explore.

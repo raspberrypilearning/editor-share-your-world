@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Build a timeline page</h2>
-### Step 1
+
 Create a second page where visitors can add and save memorable Wildcats events on a timeline.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Create two new files for the timeline page.
 
@@ -172,6 +174,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-### Step 2
-Click **Run**, open the **Timeline** page, add a year and event, and check that a new marker appears on the line and is still there after you refresh the page.
+## Now run your code
+
+Click **Run**, open the **Timeline** page, add a year and event, and check that a new marker appears on the line and stays there after you refresh the page.
