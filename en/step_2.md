@@ -1,21 +1,10 @@
-<h2 class="c-project-heading--task">Style the page</h2>
+## Style the page
 
 Add the layout and image styles that turn your HTML into a full-screen scrolling website.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Replace the contents of `style.css` with these rules.
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 1
-line_highlights: 1-5,8-17,19-25,27-32,34-36,38-41,43-45,47-54,56-62,64-69,71-76,78-85,87-89,91-97,99-101,103-114,117-121,123-126,128-133,135-145,147-157,159-161,163-165,167-169,171-174,177-180,182-184,186-188,190-193,195-200,202-207,209-211,213-223,225-229,232-242,244-255,257-259,261-263,265-267,269-275,277-284,286-292,294-300
----
+```css filename="style.css" line_numbers="true" line_number_start="1" line_highlights="1-5,8-17,19-25,27-32,34-36,38-41,43-45,47-54,56-62,64-69,71-76,78-85,87-89,91-97,99-101,103-114,117-121,123-126,128-133,135-145,147-157,159-161,163-165,167-169,171-174,177-180,182-184,186-188,190-193,195-200,202-207,209-211,213-223,225-229,232-242,244-255,257-259,261-263,265-267,269-275,277-284,286-292,294-300"
 .grid-container {
   display: grid;
   grid-template-rows: 10% 90%;
@@ -295,7 +284,7 @@ h3 {
 .textSection {
   background-color: var(--textSection-bgcol);
   padding: 30px 80px;
-  min-height: 1;
+  min-height: 100%;
   font: 1.3rem "Anton", sans-serif;
   letter-spacing: 0.1rem;
   color: white;
@@ -316,9 +305,7 @@ h3 {
   font-size: 25px;
   letter-spacing: 10px;
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

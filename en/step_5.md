@@ -1,23 +1,14 @@
-<h2 class="c-project-heading--task">Build a timeline page</h2>
+## Build a timeline page
 
 Create a second page where visitors can add and save memorable Wildcats events on a timeline.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Create two new files for the timeline page.
 
-**Code snippet 1: Add the new page structure in `timeline.html`.**
+## Step 1
 
-<div class="c-project-code">
+Add the new page structure in `timeline.html`.
 
---- code ---
----
-language: html
-filename: timeline.html
-line_numbers: true
-line_number_start: 1
-line_highlights: 1-28,30-45
----
+```html filename="timeline.html" line_numbers="true" line_number_start="1" line_highlights="1-28,30-45"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,22 +54,13 @@ line_highlights: 1-28,30-45
   <script type="text/javascript" src="scripts.js"></script>
   <script type="text/javascript" src="timeline.js"></script>
 </html>
---- /code ---
+```
 
-</div>
+## Step 2
 
-**Code snippet 2: Add the timeline logic in `timeline.js`.**
+Add the timeline logic in `timeline.js`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: timeline.js
-line_numbers: true
-line_number_start: 1
-line_highlights: 1-2,4-9,11-26,28-46,48-56,58-68,70-76,78-91
----
+```javascript filename="timeline.js" line_numbers="true" line_number_start="1" line_highlights="1-2,4-9,11-26,28-46,48-56,58-68,70-76,78-91"
 // TIMELINE
 const currentDate = new Date();
 
@@ -170,9 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

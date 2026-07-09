@@ -1,21 +1,10 @@
-<h2 class="c-project-heading--task">Build the home page</h2>
+## Build the home page
 
 Add a navigation bar and scrolling sections to turn the starter page into a Wildcats homepage.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Replace the contents of `index.html` with this page structure.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 1
-line_highlights: 6-12,16-27,29,31-35,37-41,43-59,61-69
----
+```html filename="index.html" line_numbers="true" line_number_start="1" line_highlights="6-12,16-27,29,31-35,37-41,43-59,61-69"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -86,9 +75,7 @@ line_highlights: 6-12,16-27,29,31-35,37-41,43-59,61-69
   </body>
   <script type="text/javascript" src="scripts.js"></script>  
 </html>
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
