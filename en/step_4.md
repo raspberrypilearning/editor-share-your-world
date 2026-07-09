@@ -1,21 +1,10 @@
-<h2 class="c-project-heading--task">Add interactivity</h2>
+## Add interactivity
 
 Use JavaScript to save the dark mode setting and fade in the parallax sections as they scroll into view.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Add this code to `scripts.js`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 1
-line_highlights: 1-3,5-13,15-22,24-38
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="1" line_highlights="1-3,5-13,15-22,24-38"
 // COLOUR MODE
 document.addEventListener("DOMContentLoaded", function () {
   const darkModeToggle = document.getElementById("darkModeToggle");
@@ -54,9 +43,7 @@ const observer = new IntersectionObserver((entries) => {
 { threshold: 0.5}
 );
 allParallax.forEach((parallax) => observer.observe(parallax));
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
